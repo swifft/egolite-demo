@@ -1,0 +1,18 @@
+# ego(lite) 浏览器二进制负载不进 git（621MB，超过 GitHub 单文件 100MB 限制）
+# 改由 Release 附件分发，见 scripts/publish-release.ps1 与 scripts/fetch-payload.ps1
+offline-package/payload/
+
+# 构建产物与安装包
+*.zip
+*.exe
+*.log
+
+# 本地发布用
+release-assets/
+
+# 编辑器与系统
+.vs/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
