@@ -33,6 +33,11 @@
 
 .EXAMPLE
     .\scripts\publish-release.ps1 -Repo owner/repo -Tag v0.6.2.7 -AssetPath D:\pkg.zip
+
+.NOTES
+    On a slow link the ~303 MB upload can outlast a session or agent command
+    time limit. Use scripts\publish-release-detached.ps1 for that case: it
+    runs the transfer in a detached process with a progress log.
 #>
 [CmdletBinding()]
 param(
