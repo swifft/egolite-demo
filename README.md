@@ -34,11 +34,12 @@
 
 二进制不进 git（超过 GitHub 单文件 100 MB 限制），作为 Release 附件分发：
 
-* **手动**：从 Releases 页面下载 `ego-lite-0.6.2.7-win-x64-offline-package.zip`
+* **手动**：从 <https://github.com/swifft/egolite-demo/releases/tag/v0.6.2.7> 下载
+  `ego-lite-0.6.2.7-win-x64-offline-package.zip`（303 MB）
 * **自动**：在仓库根目录执行
 
   ```powershell
-  powershell -ExecutionPolicy Bypass -File .\scripts\fetch-payload.ps1 -Repo <owner>/<repo>
+  powershell -ExecutionPolicy Bypass -File .\scripts\fetch-payload.ps1 -Repo swifft/egolite-demo
   ```
 
 ### 2. 安装
@@ -94,8 +95,10 @@ Claude Code 在 Skill 列表里选 `ego-browser`。找不到 Skill 时，先完�
 ├── scripts/
 │   ├── publish-release.ps1      # 上传 Release 附件
 │   └── fetch-payload.ps1        # 下载并展开负载
-└── docs/                        # （可选）补充文档
 ```
+
+> Release：<https://github.com/swifft/egolite-demo/releases/tag/v0.6.2.7>
+> 附件 `ego-lite-0.6.2.7-win-x64-offline-package.zip`（303.1 MB，871 个条目）
 
 ---
 
